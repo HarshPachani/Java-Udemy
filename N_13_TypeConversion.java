@@ -7,5 +7,7 @@ public class N_13_TypeConversion {
         int roundSalary = (int)salary;
         System.out.println("Percy's monthly salary is $"+salary);
         System.out.println("Percy's monthly salary is $"+roundSalary);
+        System.out.println(487%32);
+        System.out.println(487/32);
     }
 }
