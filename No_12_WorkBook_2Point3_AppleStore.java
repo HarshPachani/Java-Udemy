@@ -1,6 +1,6 @@
 package com.Udemy;
 
-public class WorkBook_2Point3_AppleStore {
+public class No_12_WorkBook_2Point3_AppleStore {
     public static void main(String[] args) {
         int numOfApples = 0;
         int numOfCustomers = 0;
