@@ -1,6 +1,6 @@
 package com.Udemy;
 
-public class N_24_WB3Point5_WorkSchedule {
+public class N_25_WB3Point5_WorkSchedule {
     public static void main(String[] args) {
         // if it's a holiday, print: "woohoo, no work!");
         // if it's the weekend, print: "it's the weekend, no work!"
