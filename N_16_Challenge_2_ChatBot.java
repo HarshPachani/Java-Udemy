@@ -1,10 +1,8 @@
 package com.Udemy;
 
 import java.util.Scanner;
-
 public class N_16_Challenge_2_ChatBot {
     public static void main(String[] args) {
-
         //set up scanner.
         Scanner scan = new Scanner(System.in);
         System.out.println("Hello. What is your name?");
