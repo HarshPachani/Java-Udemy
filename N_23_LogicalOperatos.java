@@ -17,6 +17,10 @@ public class N_23_LogicalOperatos {
         int credit = 56;
         double GPA = 3.2;
 
-        if(credit >= 40 &&)
+        if(credit >= 40 && GPA >= 2.0){
+            System.out.println("You Earned your Engineering!");
+        }else {
+            System.out.println("Sorry, you need at least 40 credits and a minimum GPA of 2.0");
+        }
     }
 }
