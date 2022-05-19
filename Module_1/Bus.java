@@ -1,4 +1,4 @@
-package com.Udemy;
+package com.Udemy.Module_1;
 
 public class Bus {
     public static void main(String[] args) {
