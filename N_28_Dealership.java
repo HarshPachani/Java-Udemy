@@ -34,8 +34,18 @@ public class N_28_Dealership {
                     System.out.println("We don't sell care under $10,000. Sorry!");
                 }
                 break;
+
             case "b":
-                System.out.println("You chose option "+option);break;
+                System.out.println("\nWhat is your car value at?");
+                int value = scan.nextInt();
+                System.out.println("\nWhat is your selling price?");
+                int price = scan.nextInt();
+                if(value > price && price < 30000){
+                    System.out.println("\nWe will buy your car. Pleasure doing business with you!");
+                }else{
+                    System.out.println("\nSorry, We're not interested!");
+                }
+                break;
             default:
                 System.out.println("Invalid option");break;
         }
