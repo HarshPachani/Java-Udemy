@@ -1,4 +1,4 @@
-package com.Udemy;
+package com.Udemy.Module_1.BooleansAndConditionals_3;
 
 public class N_26_SwitchStatements {
     public static void main(String[] args) {

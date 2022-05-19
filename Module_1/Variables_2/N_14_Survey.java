@@ -1,4 +1,4 @@
-package com.Udemy;
+package com.Udemy.Module_1.Variables_2;
 //Intro to the Scanner class.
 import java.util.Scanner;
 

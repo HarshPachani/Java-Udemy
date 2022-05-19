@@ -1,4 +1,4 @@
-package com.Udemy;
+package com.Udemy.Module_1.Variables_2;
 
 import java.util.Scanner;
 public class N_16_Challenge_2_ChatBot {

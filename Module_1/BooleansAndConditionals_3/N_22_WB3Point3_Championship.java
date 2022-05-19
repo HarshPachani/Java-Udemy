@@ -1,4 +1,4 @@
-package com.Udemy;
+package com.Udemy.Module_1.BooleansAndConditionals_3;
 
 public class N_22_WB3Point3_Championship {
     public static void main(String[] args) {

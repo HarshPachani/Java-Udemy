@@ -1,4 +1,4 @@
-package com.Udemy;
+package com.Udemy.Module_1.BooleansAndConditionals_3;
 
 import java.util.Scanner;
 

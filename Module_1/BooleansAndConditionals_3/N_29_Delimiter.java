@@ -1,4 +1,4 @@
-package com.Udemy;
+package com.Udemy.Module_1.BooleansAndConditionals_3;
 
 import java.util.Scanner;
 //.nextLine reads whole input as a one line , where Delimiters (.next()) reads the value until it reaches the whitespace.

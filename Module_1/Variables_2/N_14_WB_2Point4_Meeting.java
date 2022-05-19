@@ -1,4 +1,4 @@
-package com.Udemy;
+package com.Udemy.Module_1.Variables_2;
 
 public class N_14_WB_2Point4_Meeting {
     public static void main(String[] args) {

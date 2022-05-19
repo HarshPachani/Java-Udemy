@@ -1,4 +1,4 @@
-package com.Udemy;
+package com.Udemy.Module_1.Variables_2;
 //Typecasting in Java.
 public class N_13_TypeConversion {
     public static void main(String[] args) {

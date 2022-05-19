@@ -1,4 +1,4 @@
-package com.Udemy;
+package com.Udemy.Module_1.Variables_2;
 
 public class No_12_WorkBook_2Point3_AppleStore {
     public static void main(String[] args) {
