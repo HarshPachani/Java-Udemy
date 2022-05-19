@@ -40,8 +40,6 @@ public class N_30_WB3Point7_Bank {
         else{
             System.out.println("\nOK. Have a nice day!");
         }
-
-
         scan.close();
     }
 }
