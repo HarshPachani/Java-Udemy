@@ -1,4 +1,4 @@
-package com.Udemy;
+package com.Udemy.Module_1.Function_4;
 
 public class N_33_WB4Point1_Detention {
     public static void main(String[] args) {
