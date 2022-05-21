@@ -8,10 +8,10 @@ public class N_38_WB4Point4_JavaDraw {
         int choice;
 
         System.out.print( "\nWhich animal would you like to draw?\n" );
-        System.out.println( "Write 1 for butterfly " );
-        System.out.println( "Write 2 for elephant  " );
-        System.out.println( "Write 3 for bear      " );
-        System.out.println( "Write 4 for snake     " );
+        System.out.println("Write 1 for butterfly ");
+        System.out.println("Write 2 for elephant  ");
+        System.out.println("Write 3 for bear      ");
+        System.out.println("Write 4 for snake     ");
 
         //Task 1 – Pick up the user's choice.
         System.out.println("Enter your choice: ");
@@ -119,9 +119,7 @@ public class N_38_WB4Point4_JavaDraw {
         }
     }
      /*
-
      Animal 1
-
             System.out.println("  .==-.                   .-==.     ");
             System.out.println("   \\()8`-._  `.   .'  _.-'8()/     ");
             System.out.println("   (88\"   ::.  \\./  .::   \"88)     ");
@@ -135,7 +133,6 @@ public class N_38_WB4Point4_JavaDraw {
             System.out.println("       \"\"--'         `--\"\"      ");
 
     Animal 2
-
             System.out.println("       _..--\"\"-.                  .-\"\"--.._ ");
             System.out.println("   _.-'         \\ __...----...__ /         '-._");
             System.out.println(" .'      .:::...,'              ',...:::.      '.");
@@ -155,11 +152,7 @@ public class N_38_WB4Point4_JavaDraw {
             System.out.println("        \\  '. `-.           /");
             System.out.println("         \\_:_)   `\"--.....-'");
 
-
-
-
     Animal 3
-
             System.out.println("            ___   .--. ");
             System.out.println("      .--.-\"   \"-' .- |");
             System.out.println("     / .-,`          .'");
@@ -181,11 +174,7 @@ public class N_38_WB4Point4_JavaDraw {
             System.out.println("                   '._  _.'");
             System.out.println("                      ``");
 
-
-
-
     Animal 4
-
             System.out.println("         ,,'6''-,.");
             System.out.println("        <====,.;;--.");
             System.out.println("        _`---===. \"\"\"==__");
@@ -202,8 +191,5 @@ public class N_38_WB4Point4_JavaDraw {
             System.out.println("           |=|  `----\"\"\"     `\"\"\"\"\"\"\"\"         _,-'");
             System.out.println("            `=\\     __,---\"\"\"-------------\"\"\"''");
             System.out.println("                \"\"\"\"		");
-
-
      */
-
 }
