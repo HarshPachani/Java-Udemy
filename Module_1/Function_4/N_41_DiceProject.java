@@ -6,8 +6,8 @@ Rules :
    - The user wins if :
      - dice rolls sum is smaller than number sum
      - And the difference between the two numbers is less than three.
-
 */
+
 public class N_41_DiceProject {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
