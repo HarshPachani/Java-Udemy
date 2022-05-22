@@ -7,7 +7,6 @@ public class N_36_ReturnValues {
 
         stringPrinter(2.2,4.3,measure1,"area");
         stringPrinter(3.2,4.1,measure2,"perimeter");
-
     }
     public static double measureRectangle(double length,double width,String option){
         if(length < 0 || width < 0 ){
@@ -19,7 +18,6 @@ public class N_36_ReturnValues {
             case "parameter":return 2 * (length + width);
             default:return 404;
         }
-
     }
 
     public static void stringPrinter(double length, double width, double area,String option){
