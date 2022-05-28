@@ -18,8 +18,8 @@ public class N_2_WB_5Point1_MegaPhone {
         //        9. If Java was easy, they would call it Python!
         //        10. If Java was easy, they would call it Python!
 
-        for (int i=1; i<=10; i++){
-            System.out.println(i+". If Java was easy, they would call it Python!");
+        for (int i=0; i<10; i++){
+            System.out.println(i+1 + ". If Java was easy, they would call it Python!");
         }
     }
 }
