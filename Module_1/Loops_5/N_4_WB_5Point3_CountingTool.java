@@ -18,6 +18,7 @@ public class N_4_WB_5Point3_CountingTool {
              Let's say Timmy entered 5, you would display: 0 1 2 3 4 5
         */
 
+        System.out.println("Great! Here's how it's done");
         for (int i=0 ; i<=num; i++){
             System.out.print(i+ " ");
         }
