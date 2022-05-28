@@ -3,7 +3,7 @@ package com.Udemy.Module_1.Function_4;
 import java.util.Scanner;
 
 public class N_42_Challange_4_RockPaperScissors {
-    public static String main(String[] args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Let's play Rock Paper Scissors.");
@@ -11,7 +11,7 @@ public class N_42_Challange_4_RockPaperScissors {
         System.out.println("Are you ready? Write 'yes' if you are.");
 
         //Task 1: See if the user wants to play.
-        String answer = scan.nextLine();
+        String ready = scan.nextLine();
 
     /*Task 2: Set up the game
        • if the answer is yes:
@@ -24,15 +24,17 @@ public class N_42_Challange_4_RockPaperScissors {
        • else:
              – print: Darn, some other time...!
     */
-    if (answer.equals("yes")){
-        System.out.println("Great!");
-        System.out.println("rock – paper – scissors, shoot!");
-        String choice = scan.nextLine();
-        computerChoice();
-        scan.close();
-    }
-    else {
-        System.out.println("Darn, some other time...!");
+        if (ready.equals("yes")) {
+            System.out.println("Great!");
+            System.out.println("rock – paper – scissors, shoot!");
+            String yourChoice = scan.nextLine();
+            String computerChoice = computerChoice();
+            String result = result(yourChoice, computerChoice);
+            printResult(yourChoice,computerChoice,result);
+            scan.close();
+        } else {
+            System.out.println("Darn, some other time...!");
+        }
     }
 
     //Task 3  – Write a function where the computer picks a random choice.
@@ -46,18 +48,17 @@ public class N_42_Challange_4_RockPaperScissors {
      *      if 1: returns the choice 'paper'
      *      if 2: returns the choice 'scissors'
      */
-    public static String computerChoice(){
+    public static String computerChoice() {
         double randomNumber = Math.random() * 3;
-        int num = (int)randomNumber;
+        int integer = (int)randomNumber;
 
-        if (num == 0){
-            return "rock";
+        switch (integer){
+            case 0 : return "rock";
+            case 1 : return "paper";
+            case 2 : return "scissors";
+            default: return ""; //default case is not possible.
         }
-        else if(num == 1){
-            return "paper";
-        } else if (num == 2) {
-            return "scissors";
-        }
+
     }
 
 
@@ -90,20 +91,23 @@ public class N_42_Challange_4_RockPaperScissors {
      */
 
     public static String result(String yourChoice, String computerChoice) {
-
-        if(yourChoice.equals("rock") && computerChoice.equals("scissors") || yourChoice.equals("paper") && computerChoice.equals("rock") || yourChoice.equals("scissors") && computerChoice.equals("paper"))
-        {
-            String ans = "You Win!";
+        String result = "";
+        if(yourChoice.equals("rock") && computerChoice.equals("scissors")) {
+            result = "You Win!";
+        } else if (yourChoice.equals("rock") && computerChoice.equals("paper") ) {
+            result = "You Lose!";
+        } else if( yourChoice.equals("paper") && computerChoice.equals("rock")){
+            result = "You Win!";
+        } else if (yourChoice.equals("paper") && computerChoice.equals("scissors")) {
+            result = "You Lose!";
+        } else if ( yourChoice.equals("scissors") && computerChoice.equals("paper")) {
+            result = "You Win!";
+        } else if(yourChoice.equals("scissors") && computerChoice.equals("rock")){
+           result = "You Lose!";
+        }else if(yourChoice.equals(computerChoice)){
+           result = "It's a tie!";
         }
-
-        else if(yourChoice.equals("scissors") && computerChoice.equals("rock") || yourChoice.equals("rock") && computerChoice.equals("paper") || yourChoice.equals("paper") && computerChoice.equals("scissors"))
-            {
-                String ans = "You Lose!";
-            }
-        else {
-            String ans = "It's a tie!";
-        }
-        return ans;
+        return result;
     }
 
     //Task 5  – Write a function that prints your choice, the computer's, and the result.
@@ -121,10 +125,9 @@ public class N_42_Challange_4_RockPaperScissors {
      *      – prints: The computer chose: <computer choice>
      *      – prints: <result>
      */
-    public static void printResult(String yourChoice,String computerChoice,String ans){
-            System.out.println("You chose: "+yourChoice);
+    public static void printResult(String yourChoice,String computerChoice,String result){
+            System.out.println("\nYou chose: "+yourChoice);
             System.out.println("The computer chose: "+computerChoice);
-            System.out.println(ans);
+            System.out.println(result);
     }
-  }
 }
