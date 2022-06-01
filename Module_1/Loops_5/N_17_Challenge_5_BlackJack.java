@@ -63,7 +63,8 @@ public class N_17_Challenge_5_BlackJack {
         //For tasks 9 to 13, see the article: Blackjack Part II.
         //task 10: After the player choses to stay, It becomes the dealer's turn. First, reveal the dealer's hidden card.
         System.out.println("\nDealer's turn");
-        System.out.println("\nThe dealer's card are\n" + cardString(dealerCard1) + "\n and a \n" + cardString(dealerCard2));
+        System.out.println("\nThe dealer's cards are\n" + cardString(dealerCard1) + "\n and a \n" + cardString(dealerCard2));
+        System.out.println("\nDealer's total is: \n" + dealerTotal);
 
         //task 11: The dealer must keep "hitting" until their total gets to 17.
         while(dealerTotal < 17){
@@ -71,12 +72,23 @@ public class N_17_Challenge_5_BlackJack {
 
             dealerTotal += Math.min(newCard , 10);
             System.out.println("\nDealer gets a \n" + cardString(newCard));
-            System.out.println("\nDealer's total is: \n" + dealerTotal);
         }
 
-        //task 12:
+        //task 12: If the dealer's total is higher than 21, print: "Bust! Dealer loses" and end the game with System.exit(0).
+        if(dealerTotal > 21){
+            System.out.println("Bust! Dealer loses.");
+            System.exit(0);
+        }
 
-        //task 13:
+        //task 13: If at this point, the program didn't terminate, compare the dealer the player's hand values.
+        // ~ If the player's hand value is higher, print: Player wins!
+        // ~ Otherwise, print: Dealer wins!
+        if(total > dealerTotal){
+            System.out.println("Player Wins!");
+        }else {
+            System.out.println("Dealer Wins!");
+        }
+
         scan.close();
     }
 
