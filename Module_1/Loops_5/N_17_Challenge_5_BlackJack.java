@@ -43,9 +43,21 @@ public class N_17_Challenge_5_BlackJack {
         //             - print: your new total is <total>
 
         //       2. Once the player stays, break the loop.
-        String option = hitOrStay();
+        while(true){
+            String option = hitOrStay();
+
+            if(option.equals("stay")){
+                break;
+            }
+            int newCard = drawRandomCard();
+            total += Math.min(newCard , 10);
+            System.out.println("\nYou get a \n" + cardString(newCard));
+            System.out.println("Your total is: "+total);
+        }
 
         //For tasks 9 to 13, see the article: Blackjack Part II.
+        //Task 9: While the player is hitting, if they bust(total exceeds 21) print: "Bust! Player loses". And, shut the game down the game with System.exit(0),
+        
         scan.close();
     }
 
