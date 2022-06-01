@@ -52,12 +52,31 @@ public class N_17_Challenge_5_BlackJack {
             int newCard = drawRandomCard();
             total += Math.min(newCard , 10);
             System.out.println("\nYou get a \n" + cardString(newCard));
-            System.out.println("Your total is: "+total);
+            System.out.println("Your total is: "+ total);
+
+            //Task 9: While the player is hitting, if they bust(total exceeds 21) print: "Bust! Player loses". And, shut the game down the game with System.exit(0).
+            if(total > 21){
+                System.out.println("Bust! Player loses");
+                System.exit(0);
+            }
+        }
+        //For tasks 9 to 13, see the article: Blackjack Part II.
+        //task 10: After the player choses to stay, It becomes the dealer's turn. First, reveal the dealer's hidden card.
+        System.out.println("\nDealer's turn");
+        System.out.println("\nThe dealer's card are\n" + cardString(dealerCard1) + "\n and a \n" + cardString(dealerCard2));
+
+        //task 11: The dealer must keep "hitting" until their total gets to 17.
+        while(dealerTotal < 17){
+            int newCard = drawRandomCard();
+
+            dealerTotal += Math.min(newCard , 10);
+            System.out.println("\nDealer gets a \n" + cardString(newCard));
+            System.out.println("\nDealer's total is: \n" + dealerTotal);
         }
 
-        //For tasks 9 to 13, see the article: Blackjack Part II.
-        //Task 9: While the player is hitting, if they bust(total exceeds 21) print: "Bust! Player loses". And, shut the game down the game with System.exit(0),
-        
+        //task 12:
+
+        //task 13:
         scan.close();
     }
 
