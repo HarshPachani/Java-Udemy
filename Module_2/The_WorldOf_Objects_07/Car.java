@@ -2,10 +2,16 @@ package com.Udemy.Module_2.The_WorldOf_Objects_07;
 
 //This car class is bluePrint, and with this car class we can make many car objects.
 public class Car {
-    String make;
-    double price;
-    int year;
-    String color;
+    //Field should be Private
+    //  -You should not have direct access to them.
+    //because when we access the  field, we are using an actual field instead of reference.
+    //So we use private so that we can not accidently change the value of the actual field.
+    //and use reference or copy of that field, using getters and setters.
+    
+    private String make;
+    private double price;
+    private int year;
+    private String color;
 
     //Constructor: The Constructor runs after you create an object.
     //Updating fields one at a time isn't very efficient.In fact, it takes a lot of code.

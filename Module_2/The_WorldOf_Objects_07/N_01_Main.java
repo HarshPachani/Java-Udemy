@@ -7,17 +7,17 @@ public class N_01_Main {
 
         //The Initial value will be Zero or null.
         //Update field:- We can update the fields of an object using Dot syntax.
-        System.out.println(nissan.make);
-        System.out.println(nissan.price);
-        System.out.println(nissan.year);
-        System.out.println(nissan.color);
-        System.out.println();
-
-        System.out.println("This "+ nissan.make + " is worth $" + nissan.price +
-                ". It was built in " + nissan.year + ". It is " + nissan.color + "\n");
-
-        System.out.println("This "+ dodge.make + " is worth $" + dodge.price +
-                ". It was built in " + dodge.year + ". It is " + dodge.color + "\n");
+//        System.out.println(nissan.make);
+//        System.out.println(nissan.price);
+//        System.out.println(nissan.year);
+//        System.out.println(nissan.color);
+//        System.out.println();
+//
+//        System.out.println("This "+ nissan.make + " is worth $" + nissan.price +
+//                ". It was built in " + nissan.year + ". It is " + nissan.color + "\n");
+//
+//        System.out.println("This "+ dodge.make + " is worth $" + dodge.price +
+//                ". It was built in " + dodge.year + ". It is " + dodge.color + "\n");
 
     }
 }
