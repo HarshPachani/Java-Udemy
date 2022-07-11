@@ -1,4 +1,4 @@
-package com.Udemy.Module_2.The_WorldOf_Objects_07;
+package com.Udemy.Module_2.The_WorldOf_Objects_07.N_02_WB7Point1_AirlineReservationSystem;
 
 import java.util.Arrays;
 
