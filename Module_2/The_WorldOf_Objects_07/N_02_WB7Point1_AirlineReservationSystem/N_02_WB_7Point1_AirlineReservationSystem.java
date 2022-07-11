@@ -11,10 +11,10 @@ public class N_02_WB_7Point1_AirlineReservationSystem {
         person.passport = new String[]{person.name , person.nationality , person.dateOfBirth};
         person.seatNumber = 5;
 
-        System.out.println(person.name);
-        System.out.println(person.nationality);
-        System.out.println(person.dateOfBirth);
-        System.out.println(Arrays.toString(person.passport));
-        System.out.println(person.seatNumber);
+        System.out.println("Name: " + person.name);
+        System.out.println("Nationality:" + person.nationality);
+        System.out.println("DateOfBirth:" + person.dateOfBirth);
+        System.out.println("Passport Details:" + Arrays.toString(person.passport));
+        System.out.println("SeatNumber:" + person.seatNumber);
     }
 }
