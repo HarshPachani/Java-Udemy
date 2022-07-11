@@ -12,9 +12,9 @@ public class N_02_WB_7Point1_AirlineReservationSystem {
         person.seatNumber = 5;
 
         System.out.println("Name: " + person.name);
-        System.out.println("Nationality:" + person.nationality);
-        System.out.println("DateOfBirth:" + person.dateOfBirth);
-        System.out.println("Passport Details:" + Arrays.toString(person.passport));
-        System.out.println("SeatNumber:" + person.seatNumber);
+        System.out.println("Nationality: " + person.nationality);
+        System.out.println("DateOfBirth: " + person.dateOfBirth);
+        System.out.println("Passport Details: " + Arrays.toString(person.passport));
+        System.out.println("SeatNumber: " + person.seatNumber);
     }
 }
