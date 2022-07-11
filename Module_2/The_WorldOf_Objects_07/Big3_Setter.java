@@ -10,6 +10,10 @@ package com.Udemy.Module_2.The_WorldOf_Objects_07;
 //            4. updates the field with a parameter
 
 public class Big3_Setter {
+    private String make;
+    private double price;
+    private int year;
+    private String color;
     public Big3_Setter(String make, double price, int year, String color){
         //this keyword:- this means Current object.
         this.make = make;
@@ -17,10 +21,13 @@ public class Big3_Setter {
         this.year= year ;
         this.color = color;
     }
-    private String make;
-    private double price;
-    private int year;
-    private String color;
+
+    public Big3_Setter(Big3_Setter source){
+        this.make = source.make;
+        this.price = source.price;
+        this.year =source.year;
+        this.color = source.color;
+    }
 
     public void setMake(String make){
         this.make = make;
@@ -46,5 +53,10 @@ public class Big3_Setter {
     }
     public String getColor(){
         return this.color;
+    }
+
+    public void drive(){
+        System.out.println("You bought the beautiful " + this.year + " " + this.color+ " " + this.make+ " for " + this.price + ".");
+        System.out.println("Please drive your car to the nearest exit.\n");
     }
 }
