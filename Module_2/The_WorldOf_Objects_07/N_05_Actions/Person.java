@@ -7,6 +7,7 @@ public class Person {
         private String[] passport;
         private int seatNumber;
 
+        //Constructor for initially assign the value.
         public Person(String name, String nationality, String dateOfBirth, int seatNumber) {
             this.name = name;
             this.nationality = nationality;
@@ -14,6 +15,7 @@ public class Person {
             this.seatNumber = seatNumber;
         }
 
+        //Copy Constructor for copy the one constructor into another.
         public Person(Person source) {
             this.name = source.name;
             this.nationality = source.nationality;
@@ -21,6 +23,7 @@ public class Person {
             this.seatNumber = source.seatNumber;
         }
 
+        //For accessing the private Variables.
         public String getName() {
             return this.name;
         }
@@ -41,6 +44,7 @@ public class Person {
             this.name = name;
         }
 
+        //for changing the Variable value.
         public void setNationality(String nationality) {
             this.nationality = nationality;
         }
