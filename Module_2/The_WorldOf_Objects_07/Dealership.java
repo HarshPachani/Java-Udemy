@@ -11,5 +11,21 @@ Requirements:-
 */
 
 public class Dealership {
+        private Car[] cars; //An array of objects.
+
+    public Dealership(){
+        this.cars = new Car[3];
+    }
+
+    /*public void setCars(Car[] cars) {
+        this.cars = cars;
+    }*/
+    //Side Note:
+    //   .This is typical to a class that manages an array of objects.
+    //   .The array is likely to hold many objects.
+    //The Solution:
+    public void setCar(Car car,int index){
+        this.cars[index] = new Car(car); //to bypass the reference trap so we created a new object for it.
+    }
 
 }

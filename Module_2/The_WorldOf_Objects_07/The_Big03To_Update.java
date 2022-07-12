@@ -31,5 +31,11 @@ public class The_Big03To_Update {
         System.out.println(nissan+"\n");
         System.out.println(dodge+"\n");
         System.out.println(nissan2+"\n");
+
+        //Dealership class.
+        Dealership dealership = new Dealership();
+        dealership.setCar(nissan,0);
+        dealership.setCar(dodge,1);
+        dealership.setCar(nissan2,2);
     }
 }
