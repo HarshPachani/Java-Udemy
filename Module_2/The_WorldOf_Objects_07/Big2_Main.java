@@ -1,9 +1,9 @@
 package com.Udemy.Module_2.The_WorldOf_Objects_07;
 
 //There are Big03 Which is needed in OOPs.
-//Big01 : Constructor
-//Big02 : Getter
-//Big03 : Setter
+//Big01 : Constructor - Updates every field of a new object.
+//Big02 : Getter - return field values.
+//Big03 : Setter - Update field values.
 
 public class Big2_Main {
         public static void main(String[] args) {

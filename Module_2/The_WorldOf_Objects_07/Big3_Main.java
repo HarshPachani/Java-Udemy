@@ -27,5 +27,7 @@ public class Big3_Main {
                 ". It was built in " + nissan2.getYear() + ". It is " + nissan2.getColor() + "\n");
 
         nissan.drive();
+        dodge.drive();
+        nissan2.drive();
     }
 }
