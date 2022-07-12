@@ -12,8 +12,15 @@ public class The_Big03To_Update {
 
         TheBig03UpdateClass nissan2 = new TheBig03UpdateClass(nissan);
         nissan2.setColor("Yellow");
+        nissan2.setParts(new String[] {"tires", "filter"}); //return new String[] {"1","2" ...};
 
-        System.out.println(Arrays.toString(nissan.parts));//this will return null because the parameter we passed in the constructor is only Four.
+        String[] outsideVariable = nissan.getParts();
+        outsideVariable[1] = "hello";
+
+        System.out.println("Parts of Nissan: " + Arrays.toString(nissan.getParts()));
+
+        parts[1] = "rim"; //This variable will not change because we didn't fall in reference trap.
+        System.out.println("Parts of Nissan2: " +Arrays.toString(nissan2.getParts()));//this will return null because the parameter we passed in the constructor is only Four.
         //so if we want to add a new field then we have to update the all big three(Constructor, Getter and Setter).
 
 //        nissan.drive();

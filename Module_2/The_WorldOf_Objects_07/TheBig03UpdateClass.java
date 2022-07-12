@@ -7,7 +7,7 @@ public class TheBig03UpdateClass {
     private double price;
     private int year;
     private String color;
-    String[] parts;
+    private String[] parts;
     public TheBig03UpdateClass(String make, double price, int year, String color, String[] parts){
         //this keyword:- this means Current object.
         this.make = make;
@@ -24,6 +24,7 @@ public class TheBig03UpdateClass {
         this.price = source.price;
         this.year =source.year;
         this.color = source.color;
+        this.parts = Arrays.copyOf(source.parts,source.parts.length);
     }
 
     public void setMake(String make){
@@ -38,7 +39,9 @@ public class TheBig03UpdateClass {
     public void setColor(String color) {
         this.color = color;
     }
-
+    public void setParts(String[] parts){
+        this.parts = Arrays.copyOf(parts, parts.length);
+    }
     public String getMake(){
         return this.make;   //it's ok if we don't use this in the getters.
     }
@@ -50,6 +53,10 @@ public class TheBig03UpdateClass {
     }
     public String getColor(){
         return this.color;
+    }
+    public String[] getParts(){
+        return Arrays.copyOf(this.parts, this.parts.length); //so that we cannot change the variable from the outside.
+        //we will return only the copy of the Array.
     }
 
     public void drive(){
