@@ -27,5 +27,4 @@ public class Dealership {
     public void setCar(Car car,int index){
         this.cars[index] = new Car(car); //to bypass the reference trap so we created a new object for it.
     }
-
 }
