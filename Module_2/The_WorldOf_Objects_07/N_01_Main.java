@@ -15,7 +15,8 @@ public class N_01_Main {
 //
 //        System.out.println("This "+ nissan.make + " is worth $" + nissan.price +
 //                ". It was built in " + nissan.year + ". It is " + nissan.color + "\n");
-//
+//          Here we've commented this because the variable has private access, so we cannot
+//          use it directly for that reason we use getters and setters.
 //        System.out.println("This "+ dodge.make + " is worth $" + dodge.price +
 //                ". It was built in " + dodge.year + ". It is " + dodge.color + "\n");
 

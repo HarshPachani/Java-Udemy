@@ -16,10 +16,11 @@ public class Car {
     //Constructor: The Constructor runs after you create an object.
     //Updating fields one at a time isn't very efficient.In fact, it takes a lot of code.
     //so our goal is to use a constructor to update fields with a constructor.
-    public Car(String make, double price, int year, String color){
+    public Car(String make, double price, int year, String color)//These variables are the variables of Main class
+    {
         //this keyword:- this means Current object.
-        this.make = make;
-        this.price = price;
+        this.make/*this variables are the variables of the Car(Present class)*/ = make;
+        this.price = price;//These both variables are different.
         this.year= year ;
         this.color = color;
     }
