@@ -1,6 +1,5 @@
 package com.Udemy.Module_2.The_WorldOf_Objects_07;
 
-
 import java.util.Arrays;
 
 //We'll have to update the constructor because we added a new parameter called parts.
@@ -26,5 +25,11 @@ public class The_Big03To_Update {
 //        nissan.drive();
 //        dodge.drive();
 //        nissan2.drive();
+
+        //After adding toString method in derived class.
+        System.out.println("\n");
+        System.out.println(nissan+"\n");
+        System.out.println(dodge+"\n");
+        System.out.println(nissan2+"\n");
     }
 }
