@@ -11,7 +11,7 @@ Requirements:-
 */
 
 public class Dealership {
-        private TheBig03UpdateClass[] cars; //An array of objects.
+        private TheBig03UpdateClass[] cars ; //An array of objects.
 
     public Dealership(){
         this.cars = new TheBig03UpdateClass[3];

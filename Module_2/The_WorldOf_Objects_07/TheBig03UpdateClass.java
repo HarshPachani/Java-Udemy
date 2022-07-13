@@ -8,7 +8,7 @@ public class TheBig03UpdateClass {
     private double price;
     private int year;
     private String color;
-    private String[] parts;
+    private String[] parts;//Array of the String.
     public TheBig03UpdateClass(String make, double price, int year, String color, String[] parts){
         //this keyword:- this means Current object.
         this.make = make;
@@ -20,7 +20,7 @@ public class TheBig03UpdateClass {
         this.parts = Arrays.copyOf(parts, parts.length); //we copied every array element into the another array.
     }
 
-    public TheBig03UpdateClass(TheBig03UpdateClass source){
+    public TheBig03UpdateClass(TheBig03UpdateClass source){//Copy constructor.
         this.make = source.make;
         this.price = source.price;
         this.year =source.year;
@@ -42,6 +42,8 @@ public class TheBig03UpdateClass {
     }
     public void setParts(String[] parts){
         this.parts = Arrays.copyOf(parts, parts.length);
+        //we don't want to access the original array, so we make copy of the array and
+        // then gave reference of it instead of giving reference to the original array.
     }
     public String getMake(){
         return this.make;   //it's ok if we don't use this in the getters.
