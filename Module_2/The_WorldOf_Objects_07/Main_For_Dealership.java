@@ -6,7 +6,7 @@ public class Main_For_Dealership {
         {
                 new TheBig03UpdateClass("Nissan", 5000, 2022, "red", new String[]{"tires", "keys"}),
                 new TheBig03UpdateClass("Dodge", 11000, 2020, "blue", new String[]{"tires", "keys"}),
-                new TheBig03UpdateClass("Nissan", 5000, 2022, "yellow", new String[]{"tires", "filter"}),
+                new TheBig03UpdateClass("Nissan", 5000, 2017, "yellow", new String[]{"tires", "filter"}),
         };
         //Dealership class.
         Dealership dealership = new Dealership();
@@ -14,8 +14,12 @@ public class Main_For_Dealership {
             dealership.setCar(cars[i],i);
         }
 
+        //for updating the car information.
         TheBig03UpdateClass newCar = dealership.getCar(0);
         newCar.setColor("blue");
         System.out.println(dealership.getCar(0));
+
+        dealership.sell(2);
+        System.out.println(dealership.search("Dodge", 11000));
     }
 }
