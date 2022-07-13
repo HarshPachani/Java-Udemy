@@ -20,6 +20,7 @@ public class Main_For_Dealership {
         System.out.println(dealership.getCar(0));
 
         dealership.sell(2);
+//        System.out.println(dealership); //for printing all tha array of an object.
         System.out.println(dealership.search("Dodge", 11000));
     }
 }

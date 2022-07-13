@@ -54,4 +54,18 @@ public class Dealership {
         }
         return "Sorry, we couldn't find any cars.";
     }
+
+    //Add a toString method.
+    public String toString(){
+        String temp = "";
+        for (int i = 0; i < this.cars.length; i++) {
+            temp += "Parking Spot: " + i + "\n";
+            if (this.cars[i] == null){
+                temp += "Empty \n";
+            }else {
+                temp += this.cars[i].toString() + "\n\n";//for printing the details of the cars.
+            }
+        }
+        return temp;
+    }
 }
