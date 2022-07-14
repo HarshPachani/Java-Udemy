@@ -13,8 +13,18 @@ Requirements:-
 public class Dealership {
         private TheBig03UpdateClass[] cars ; //An array of objects.
 
-    public Dealership(){
+    //this is simple approach.
+
+    /*public Dealership(){
         this.cars = new TheBig03UpdateClass[3];
+    }*/
+    //This is fixed constructor approach.
+    //Here we fixed the dealership constructor of Dealership class and passed an array of an object and added a for loop in the constructor.
+    public Dealership(TheBig03UpdateClass[] cars){
+        this.cars = new TheBig03UpdateClass[cars.length];
+        for (int i = 0; i < this.cars.length; i++) {
+            this.cars[i] = new TheBig03UpdateClass(cars[i]);
+        }
     }
 
     /*public void setCar(The_Big03To_Update[] cars) {
