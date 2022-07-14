@@ -31,8 +31,8 @@ public class Dealership {
         this.cars = cars;
     }*/
     //Side Note:
-    //   .This is typical to a class that manages an array of objects.
-    //   .The array is likely to hold many objects.
+    //   •This is typical to a class that manages an array of objects.
+    //   •The array is likely to hold many objects.
     //The Solution:
 
     //setter
