@@ -1,4 +1,4 @@
-// package com.Udemy.Module_2.The_WorldOf_Objects_07.Workbook_02_VendingMachineApp;
+package com.Udemy.Module_2.The_WorldOf_Objects_07.Workbook_02_VendingMachineApp;
 
 public class Machine {
     private Item[][] items;
@@ -37,5 +37,18 @@ public class Machine {
         
         public void setItem(Item item, int row, int spot){
             this.items[row][spot] = new Item(item);
+        }
+
+        public String toString(){
+            String temp = "";
+            for (int i = 0; i < items.length; i++) {
+                temp += "\t";
+                for (int j = 0; j < items[i].length; j++) {
+                    temp += this.items[i][j].toString();
+                }
+                temp += "\n\n";
+            }
+            temp += "\t************************************************";
+            return temp;
         }
 }
