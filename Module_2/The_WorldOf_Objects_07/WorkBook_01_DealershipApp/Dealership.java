@@ -1,7 +1,10 @@
 package com.Udemy.Module_2.The_WorldOf_Objects_07.WorkBook_01_DealershipApp;
 
+//The Dealership class is a Manager class, a manager class manages an objects of another class.
+//The work of the Dealership is to Show the available cars in a Budget and Sell a car.
+
 public class Dealership {
-        private Car[] cars;
+        private Car[] cars;//This creates an array that can store number of car objects.
 
         public Dealership(Car[] cars) {
             this.cars = new Car[cars.length];
