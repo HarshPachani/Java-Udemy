@@ -7,7 +7,7 @@ public class Main {
 
             Scanner scan = new Scanner(System.in);
 
-            Car[] cars = new Car[] {
+            Car[] cars = new Car[] { //This is an Array of the objects. 
                     new Car("Nissan", 5000, 2020, "red", new String[] {"tires", "keys"}),
                     new Car("Dodge", 8500, 2019, "blue", new String[] {"tires", "keys"}),
                     new Car("Nissan", 5000, 2017, "yellow", new String[] {"tires", "filter"}),

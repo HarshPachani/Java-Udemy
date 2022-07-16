@@ -17,8 +17,8 @@ public class Dealership {
             this.cars[index] = new Car(car);
         }
 
-        public Car getCar(int index) {
-            return new Car(this.cars[index]);
+        public Car getCar(int index) {//because it is gonna return a Car object, hence we use public Car in here.
+            return new Car(this.cars[index]); //new Car(this.cars[index]{this is source object}) is the copy constructor
         }
 
         public void sell(int index) {
