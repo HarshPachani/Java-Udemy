@@ -1,0 +1,12 @@
+- There are two types of an Exceptions:- 
+	1. Checked Exceptions
+	2. Unchecked Exceptions
+
+-> The checked Exception is the failure that the application cannot control and so Java is gonna force you to catch Checked Exceptions.
+
+-> A checked Exception can occur from failing to connect to a website, Trying to access a missing file, Failing to access a quary from a database.
+like:- NetworkException
+       FileNotFoundException
+       SQLException
+-> so, we can say that the code is more likely to fail if it interacts with outside resources.
+-> Hence, Java is gonna force us to try to run the code and catch the exception if the code fails.	
