@@ -1,0 +1,19 @@
+- There are two types of an Exceptions:- 
+	1. Checked Exceptions
+	2. Unchecked Exceptions
+
+-> Unchecked Exception happen during the runtime.
+
+-> We can fix the Unchecked Exception.
+-> Both checked and Unchecked Exceptions are the failures.
+-> Difference between them:-
+	-> A checked Exception is a failure that's outside the control of the application, so Java is going to force you to try to run a code and catch the exception if it fails.
+	-> An Unchecked Exception is the result of badly written code, never Ever catch an Unchecked exception. instead fix your code.
+	-> Unchecked Exceptions are runtime Exceptions, in other words the failure happens while the app is running and will crash an application. 
+
+-> An Unchecked Exception Examples are
+    :- ArrayIndexOutOfBoundException
+       NullPointerException
+       IllegalArgumentException
+       inputMismachException
+       IllegalStateException	
