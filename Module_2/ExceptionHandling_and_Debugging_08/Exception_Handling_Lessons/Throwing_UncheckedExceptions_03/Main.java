@@ -13,13 +13,21 @@ import com.Udemy.Module_2.ExceptionHandling_and_Debugging_08.Exception_Handling_
     -> IllegalArgumentException.
     -> IllegalStateException.
 */
+
+//IllegalStateException:- is thrown if an object of the method call with an illegal state.
 public class Main {
         public static void main(String[] args) {
-            Employee stocker = new Employee("   ", null);
-            Employee assisManager = new Employee("Nicholas", "     ");
-            Employee manager = new Employee(null, "      ");
+            Employee stocker = new Employee("Paul", "Stocker");
+            Employee stokerCopy = new Employee(stocker);
+            Employee assisManager = new Employee("Nicholas", "Assistant Manager");
+            Employee manager = new Employee("Demian", "Manager");
 
             Store store = new Store();
+
+            //If we don't setEmployees in the store than the application will crash due to IllegalStateException.
+            store.setEmployees(0, stocker);
+            store.setEmployees(1, assisManager);
+            store.setEmployees(2, manager);
 
             System.out.println(store);
             store.open();

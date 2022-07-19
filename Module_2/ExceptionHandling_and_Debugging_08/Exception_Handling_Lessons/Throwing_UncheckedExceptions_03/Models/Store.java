@@ -12,6 +12,12 @@ public class Store {
         }
 
         public void open() {
+            for (int i = 0; i < employees.length; i++) {
+                //for checking that if any one employee is not in the store than the application throw an exception.
+                if (employees[i] == null){
+                    throw new IllegalStateException("You must be fully staffed before opening the store.");
+                }
+            }
             System.out.println("We're open for business!");
         }
 
