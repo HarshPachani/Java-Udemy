@@ -22,9 +22,29 @@ public class Main {
         System.out.println("\n************* JAVA DEALERSHIP *************");
         while (true) {
             System.out.println(dealership);
+            if (dealership.isEmpty()){
+                System.out.println("We're all sold out!");
+                break;
+            }
             System.out.print("Enter the spot number of the car you want to buy: ");
+            if (!scan.hasNextInt()){    //If user enter String instead the number than application crashed. to prevent that problem.
+                scan.nextLine();
+                System.out.println("INVALID INPUT.");
+                continue;
+            }
             int spot = scan.nextInt();
-            dealership.sell(spot);    
+            scan.nextLine();
+            if (spot < 0 || spot > dealership.getLength() - 1){//To check if the input the user enter cannot be negative.
+                System.out.println("INVALID INDEX..");
+            } else if (dealership.getCar(spot) == null) {
+                System.out.println("EMPTY SPOT.");
+                continue;
+            }
+            dealership.sell(spot);
+            System.out.println("Type 'yes' to continue shopping: ");
+            if (!scan.nextLine().equalsIgnoreCase("yes")){
+                break;
+            }
         }
 
        //scan.close();
