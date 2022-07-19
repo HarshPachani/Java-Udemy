@@ -1,4 +1,4 @@
-package com.Udemy.Module_2.ExceptionHandling_and_Debugging_08.Exception_Handling_Lessons.UncheckedExceptions;
+package com.Udemy.Module_2.ExceptionHandling_and_Debugging_08.Exception_Handling_Lessons.UncheckedExceptions_02;
 
 public class RuntimeException2 {
     //This is showing NullPointerException.
