@@ -1,10 +1,16 @@
-package models;
+package com.Udemy.Module_2.ExceptionHandling_and_Debugging_08.Exception_Handling_Workbooks.Dealership.Models;
 
 public class Car {
     private String make;
     private double price;
 
     public Car(String make, double price) {
+        if (price < 0){
+            throw new IllegalArgumentException("Price cannot be less than zero.");
+        }
+        if (make == null || make.isBlank()){
+            throw new IllegalArgumentException("Make cannot be null/blank");
+        }
         this.make = make;
         this.price = price;
     }
@@ -22,10 +28,16 @@ public class Car {
     }
 
     public void setMake(String make) {
+        if (make == null || make.isBlank()){
+            throw new IllegalArgumentException("Make cannot be null/blank");
+        }
         this.make = make;
     }
 
     public void setPrice(double price) {
+        if (price > 0){
+            throw new IllegalArgumentException("Price cannot be less than 0.");
+        }
         this.price = price;
     }
 

@@ -1,4 +1,5 @@
-package models;
+package com.Udemy.Module_2.ExceptionHandling_and_Debugging_08.Exception_Handling_Workbooks.Dealership.Models;
+
 
 public class Dealership {
     private Car[] cars;
