@@ -1,5 +1,6 @@
+package com.Udemy.Module_2.ExceptionHandling_and_Debugging_08.Exception_Handling_Lessons.Checked_Exceptions_01;
+
 import java.net.MalformedURLException;
-import java.nio.charset.MalformedInputException;
 import java.net.URL;
 
 public class ParseURL{
