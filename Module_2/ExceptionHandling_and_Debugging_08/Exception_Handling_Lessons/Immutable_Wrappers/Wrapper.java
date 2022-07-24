@@ -12,6 +12,12 @@ public class Wrapper {
         Integer wholeNumber = new Integer(5); //These both are same, the difference is we are using a class of an int.
         // Integer wholeNumber = 5; //or we can write like this either.
 
+        Integer numberTwo = wholeNumber;
+        numberTwo = 10;
+
+        System.out.println(wholeNumber);
+        System.out.println(numberTwo);
+
         //long largeWholeNumber = 5000000000L;
         Long largewholeNumber = new Long(5000000000L);
 
@@ -22,4 +28,13 @@ public class Wrapper {
         Character letter = new Character('b');
     }
 }
+/*When to use Primitive vs Wrapper:-
+    - Use Primitive 90 % of time. (because Primitive is faster than Wrapper).
+    - Use Wrapper only when you need to Examples:-
+        - Needs to be nullable.
+        - Nedds to call methods.
 
+
+
+
+ */
