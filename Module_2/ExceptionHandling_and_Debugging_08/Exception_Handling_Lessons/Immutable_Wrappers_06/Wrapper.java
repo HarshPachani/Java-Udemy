@@ -1,4 +1,4 @@
-package com.Udemy.Module_2.ExceptionHandling_and_Debugging_08.Exception_Handling_Lessons.Immutable_Wrappers;
+package com.Udemy.Module_2.ExceptionHandling_and_Debugging_08.Exception_Handling_Lessons.Immutable_Wrappers_06;
 
 //Wrapper:- A Wrapper is an immutable class that wraps around a primitive type.
 //Ex:- Integer  -> Immutable class that wraps around int.
