@@ -5,7 +5,7 @@ public class Car {
     //Field should be Private
     //  -You should not have direct access to them.
     //because when we access the  field, we are using an actual field instead of reference.
-    //So we use private so that we can not accidentally change the value of the actual field.
+    //Hence we use private so that we do not accidentally change the value of the actual field.
     //and use reference or copy of that field, using getters and setters.
 
     private String make;

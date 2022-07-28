@@ -33,7 +33,7 @@ public class Big2_Getter {
         }
 
         public String getMake(){
-            return this.make;   //it's ok if we don't use this in the getters.
+            return this.make;   //it's ok if we don't use "this" keyword in the getters.
         }
         public double getPrice(){
             return this.price;
